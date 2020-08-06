@@ -58,9 +58,9 @@ public class Program {
 		System.out.println("ORDER SUMMARY: ");
 		System.out.println(order.toString());
 		for (OrderItem oi : order.getItems()) {
-			System.out.println(oi.getProduct().getName() + ", $" + oi.getProduct().getPrice() + ", Quantity: " + 
-		                       oi.getQuantity() + ", SubTotal: $" + oi.subTotal());
-			
+			System.out.println(oi.toString());
+			//System.out.println(oi.getProduct().getName() + ", $" + oi.getProduct().getPrice() + ", Quantity: " + 
+		    //                   oi.getQuantity() + ", SubTotal: $" + oi.subTotal());			
 		}
 		System.out.printf("Total Price: $ %.2f",order.total());
 		sc.close();
